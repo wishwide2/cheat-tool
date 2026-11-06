@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">红斗篷与洞窟中的提灯</title>
+  <defs>
+    <linearGradient id="night" x2=".2" y2="1">
+      <stop stop-color="#242a49"/>
+      <stop offset="1" stop-color="#101529"/>
+    </linearGradient>
+    <linearGradient id="rock" x1=".16" y1=".09" x2=".88" y2=".94">
+      <stop stop-color="#6b7098"/>
+      <stop offset="1" stop-color="#303953"/>
+    </linearGradient>
+    <linearGradient id="tunnel" x2=".4" y2="1">
+      <stop stop-color="#21213c"/>
+      <stop offset="1" stop-color="#131b31"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1=".14" y1=".12" x2=".83" y2=".96">
+      <stop stop-color="#ff786c"/>
+      <stop offset=".48" stop-color="#e34d58"/>
+      <stop offset="1" stop-color="#ad2949"/>
+    </linearGradient>
+    <radialGradient id="light">
+      <stop stop-color="#ffbc6c" stop-opacity=".43"/>
+      <stop offset="1" stop-color="#ff9357" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame">
+      <rect x="8" y="8" width="496" height="496" rx="108"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect x="8" y="8" width="496" height="496" fill="url(#night)"/>
+    <path fill="#20243b" d="M8 190 62 106l50-21 52-59 85-18 63 39 89 38 40 57 63 70v292H8Z"/>
+    <path fill="url(#rock)" d="M28 423 62 294l30-105 45-69 64-42 65-27 71 30 49 49 42 62 31 103 28 130-57 41H82Z"/>
+    <path fill="#8185aa" opacity=".48" d="m91 190 46-70 64-42 65-27 71 30 49 49-57-37-61-21-69 32-51 44-28 58-33 99Z"/>
+    <path fill="#464e70" d="m27 423 34-126 29 35-5 60 35 24 16 50H82Zm381-162 20-70 31 103 28 131-57 41-18-54 24-27-14-49Z"/>
+    <path fill="url(#tunnel)" stroke="#2b304c" stroke-width="11" stroke-linejoin="round"
+          d="m107 413 18-111 25-88 41-65 73-40 65 34 41 62 26 89 25 119-45 29H151Z"/>
+    <path fill="#14192e" d="m171 225 25-53 60-33 38 14 35 38-23-8-31 18-24-9-23 27-18-9-26 23Z"/>
+    <path fill="#252b46" d="M86 414c40-13 72-20 100-18 41 5 63 25 106 21 37-3 66-19 108-16l49 39-20 64H77Z"/>
+    <path fill="#39415b" d="M72 448c50-14 97-21 140-14 48 8 77 17 116 9 29-6 53-16 99-12l32 19-20 15c-36-5-67 8-106 13-57 8-91-13-145-11-44 1-76 13-109 13Z"/>
+    <circle cx="358" cy="338" r="100" fill="url(#light)"/>
+    <path fill="#f4ac6e" opacity=".82" d="m380 244 5 13 13 5-13 5-5 13-5-13-13-5 13-5Zm-54-25 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/>
+    <path fill="#101528" opacity=".83" d="M110 427c31-21 79-30 141-30 63 0 102 11 123 30-24 22-65 29-124 29-63 0-113-9-140-29Z"/>
+    <path fill="url(#cloth)" stroke="#22152e" stroke-width="9" stroke-linejoin="round"
+          d="M119 412c9-42 32-71 58-89 3-30 12-54 27-80 14-24 38-46 65-66 18 20 40 40 54 68 13 24 20 52 21 78 21 19 35 45 44 88-34 16-74 23-132 23-53 0-104-7-137-22Z"/>
+    <path fill="#ba3150" d="M266 188c21 22 43 42 56 72 9 19 14 43 16 64 18 20 31 41 39 82-27 11-53 17-90 20 10-29 10-58-1-92 22-22 34-48 27-76-6-24-27-49-47-70Z"/>
+    <path fill="#ff9080" opacity=".76" d="M201 257c15-27 35-46 58-61-16 24-33 46-39 72-6 22-4 41 5 61-13-5-23-12-35-21 0-18 4-34 11-51Z"/>
+    <path fill="none" stroke="#852843" stroke-width="8" stroke-linecap="round" d="M189 324c21 17 43 25 68 25 22 0 43-8 64-23"/>
+    <path fill="none" stroke="#4b2d38" stroke-width="10" stroke-linecap="round" d="m332 347 26-21"/>
+    <path fill="#271f32" stroke="#a8684a" stroke-width="6" d="M352 322c0-12 19-12 19 0v9h-19Z"/>
+    <path fill="#f9b867" stroke="#59363d" stroke-width="7" stroke-linejoin="round" d="M345 332h34l-4 40h-26Z"/>
+    <path fill="#fff0a9" d="m352 339 20 0-3 25h-15Z"/>
+    <path fill="#f3a05e" d="m357 350 5-7 5 7-2 9h-6Z"/>
+  </g>
+  <rect x="12" y="12" width="488" height="488" rx="105" fill="none" stroke="#6c7395" stroke-opacity=".32" stroke-width="7"/>
+</svg>
