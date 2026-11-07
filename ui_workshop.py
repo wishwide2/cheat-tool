@@ -35,7 +35,8 @@ class WorkshopFeatures:
     def _build_quick_tools(self):
         self.quick_tools = ttk.Frame(self.main, padding=(24, 0, 24, 12))
         self.quick_tools.pack(fill='x')
-        for text, command in [('存档列表', self.show_save_browser), ('修改预览', self.show_change_review),
+        for text, command in [('存档列表', self.show_save_browser), ('剧情跳转', self.show_story_navigation),
+                              ('修改预览', self.show_change_review),
                               ('撤销全部', self.discard_all_changes), ('备份记录', self.show_backups)]:
             button = ttk.Button(self.quick_tools, text=text, command=command, padding=(9, 7))
             button.pack(side='left', padx=(0, 7))
