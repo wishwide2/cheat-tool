@@ -9,6 +9,7 @@ from contextlib import contextmanager
 from tkinter import filedialog, messagebox, simpledialog, ttk
 from ui_workshop import WorkshopFeatures
 from ui_launch import GameLaunchFeatures
+from workshop_paths import APP_NAME, APP_VERSION
 
 BG = '#F3F6FA'
 CARD = '#FFFFFF'
@@ -29,7 +30,7 @@ PAGES = [
     ('道具库存', '按名称查找物品，把需要的数量加入修改列表。', '▤'),
     ('技能管理', '管理角色的技能记录与习得等级。', '✦'),
     ('游戏数据', '组合游戏规则与难度配置，应用后重新启动游戏。', '⚙'),
-    ('启动游戏', '选择中文、日文或英文，继续你的冒险。', '▶'),
+    ('启动游戏', '启动本机游戏，或选择本机已有的兼容语言资源。', '▶'),
 ]
 
 
@@ -39,7 +40,7 @@ class EditorApp(GameLaunchFeatures, WorkshopFeatures):
         self.mc = core.MC
         self._load_workshop_preferences()
         self.root = root or tk.Tk()
-        self.root.title('阿卡桑 · 冒险工坊  |  开源版 · 9.51')
+        self.root.title(f'{APP_NAME}  |  v{APP_VERSION}')
         self.root.configure(bg=BG)
         icon_path = os.path.join(getattr(sys, '_MEIPASS', os.path.dirname(__file__)), 'ui_icon.png')
         if os.path.isfile(icon_path):
@@ -193,8 +194,9 @@ class EditorApp(GameLaunchFeatures, WorkshopFeatures):
         brand.pack(fill='x', padx=23, pady=(30, 32))
         self.brand_icon = self.window_icon.subsample(3, 3)
         tk.Label(brand, image=self.brand_icon, bg=NAV, bd=0).pack(anchor='w', pady=(0, 13))
-        tk.Label(brand, text='AKASAN', font=('Segoe UI', 18, 'bold'), bg=NAV, fg='#F7FAFD').pack(anchor='w')
-        tk.Label(brand, text='冒险工坊', font=(FONT, 11), bg=NAV, fg='#9CB3C7').pack(anchor='w', pady=(3, 0))
+        tk.Label(brand, text=APP_NAME, font=(FONT, 12, 'bold'), bg=NAV, fg='#F7FAFD',
+                 wraplength=156, justify='left').pack(anchor='w')
+        tk.Label(brand, text='存档编辑器', font=(FONT, 10), bg=NAV, fg='#9CB3C7').pack(anchor='w', pady=(5, 0))
         tk.Label(sidebar, text='工 作 空 间', bg=NAV, fg='#627D94', font=(FONT, 8)).pack(anchor='w', padx=24, pady=(0, 12))
         self.nav_buttons = {}
         for i in (6, 0, 1, 2, 3, 4, 5):

@@ -1,9 +1,11 @@
-"""Public-edition paths for user data and optional local tools."""
+"""Application identity and paths for user data and optional local tools."""
 import os
 from pathlib import Path
 import sys
 import tempfile
 
+APP_NAME = "赤ずきんと不思議な洞窟-tool"
+APP_VERSION = "1.0.0"
 APP_ID = "AkasanWorkshopPublic"
 CLI_NAME = "UberWolfCli.exe"
 
