@@ -2,7 +2,7 @@
 #define AppExe AppName + ".exe"
 #define AppRepository "https://github.com/wishwide2/cheat-tool"
 #ifndef AppVersion
-  #define AppVersion "1.0.0"
+  #define AppVersion "1.1.0"
 #endif
 #ifndef AppBinary
   #define AppBinary "..\dist\AkasanTool.exe"
